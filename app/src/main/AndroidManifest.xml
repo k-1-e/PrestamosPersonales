@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrestamosPersonales">
         <activity
+            android:name=".Principal"
+            android:exported="true" />
+        <activity
+            android:name=".VentanaPrincipal"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
