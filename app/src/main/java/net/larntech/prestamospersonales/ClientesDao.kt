@@ -10,12 +10,12 @@ interface ClientesDao {
     fun getAll() : LiveData<List<Cliente>>
 
     @Insert
-    fun InsertAll(vararg cliente: Cliente)
+    fun insertAll(vararg cliente: Cliente)
 
     @Update
     fun update(cliente: Cliente)
 
     @Delete
-    fun Delete(cliente: Cliente)
+    fun delete(cliente: Cliente)
 
 }

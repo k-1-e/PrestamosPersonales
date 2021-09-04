@@ -9,5 +9,5 @@ class Cliente(val nombre:String,
               val cantidadprestada: Double,
               val descripcion: String,
               @PrimaryKey(autoGenerate = true)
-              val uid :Int = 0
-) :Serializable
+              val uid: Int = 0
+) : Serializable

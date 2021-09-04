@@ -5,9 +5,9 @@
       <map>
         <entry key="app/src/main/res/layout/activity_cliente.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.18" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_nuevo_cliente.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_principal.xml" value="0.15217391304347827" />
+        <entry key="app/src/main/res/layout/activity_principal.xml" value="0.15" />
         <entry key="app/src/main/res/layout/item_cliente.xml" value="0.25" />
       </map>
     </option>

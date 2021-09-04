@@ -22,7 +22,7 @@ abstract class PrestamosDatabase : RoomDatabase() {
                 return tempInstance
             }
             synchronized(this) {
-                val instance = Room.databaseBuilder(context.applicationContext,PrestamosDatabase::class.java, "PrestamosDatabase").build()
+                val instance = Room.databaseBuilder(context.applicationContext,PrestamosDatabase::class.java, "Prestamos_Database").build()
                 INSTANCE = instance
                 return instance
             }

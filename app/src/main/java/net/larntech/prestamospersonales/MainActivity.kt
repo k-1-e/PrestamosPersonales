@@ -7,27 +7,29 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
+import androidx.lifecycle.Observer
+import kotlinx.android.synthetic.main.activity_principal.*
 
 class MainActivity : AppCompatActivity() {
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-    fun startAplication(view: View) {
+    fun Iniciar(view: View) {
         var usuario = findViewById<EditText>(R.id.EditUsuario).text.toString();
         var contraseña = findViewById<EditText>(R.id.EditContraseña).text.toString();
         if (usuario == "Kevin" && contraseña == "1351") {
             val intent = Intent(this, Principal::class.java)
             startActivity(intent)
-        }
-        else {
+        } else {
 
-            Toast.makeText(this,"Falta llenar los campos", Toast.LENGTH_SHORT)
+            Toast.makeText(this, "Falta llenar los campos", Toast.LENGTH_SHORT)
                 .show();
 
         }
 
     }
-
-
 }

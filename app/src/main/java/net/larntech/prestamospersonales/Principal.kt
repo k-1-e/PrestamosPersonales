@@ -4,20 +4,23 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.lifecycle.Observer
 import kotlinx.android.synthetic.main.activity_principal.*
 
 class Principal : AppCompatActivity() {
+    private var listaClientes = emptyList<Cliente>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_principal)
-        val cliente = Cliente("Kevin", 100.0, "kevin es de san carlos",R.drawable.dinero)
-        val cliente2 = Cliente("Jose", 500.0,"es de nueva guinea",R.drawable.bienvenidos)
 
-        val listaClientes = listOf(cliente,cliente2)
+        val db = PrestamosDatabase.getDatabase(this)
 
-        val adapter = ClienteAdapter(this, listaClientes)
-
-        lista.adapter = adapter
+        db.clientesDao().getAll().observe(this, Observer {
+         listaClientes = it
+            val adapter = ClienteAdapter(this, listaClientes)
+            lista.adapter = adapter
+        })
 
         lista.setOnItemClickListener { parent, view, position, id ->
             val intent = Intent(this, ClienteActivity::class.java)
@@ -25,7 +28,14 @@ class Principal : AppCompatActivity() {
             startActivity(intent)
         }
         add_fab.setOnClickListener{
-
+            val intent = Intent(this,  NuevoCliente::class.java)
+           // intent.putExtra("cliente", listaClientes[position])
+            startActivity(intent)
         }
+    }
+    fun agregar(view: View) {
+        val intent = Intent(this, NuevoCliente::class.java)
+        startActivity(intent)
+
     }
 }
