@@ -8,7 +8,8 @@ import java.io.Serializable
 class Cliente(
     val nombre:String,
     val cantidadprestada: Double,
-    val descripcion: String,
+    val direccion: String,
+    val telefono: Int,
     @PrimaryKey(autoGenerate = true)
     var idCliente: Int = 0
 ) : Serializable

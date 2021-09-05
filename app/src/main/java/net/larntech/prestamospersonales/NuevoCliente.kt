@@ -1,18 +1,10 @@
 package net.larntech.prestamospersonales
 
-import android.content.ContentUris
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
-import android.view.View
-import android.widget.EditText
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_nuevo_cliente.*
 import kotlinx.coroutines.*
-
-import kotlin.math.round
 
 class NuevoCliente : AppCompatActivity() {
 
@@ -32,7 +24,8 @@ class NuevoCliente : AppCompatActivity() {
 
             nombre_et.setText(cliente.nombre)
             cantidadprestada_et.setText(cliente.cantidadprestada.toString())
-            descripcion_et.setText(cliente.descripcion)
+            descripcion_et.setText(cliente.direccion)
+            telefono_et.setText(cliente.telefono.toString())
             idCliente = cliente.idCliente
         }
 
@@ -42,10 +35,10 @@ class NuevoCliente : AppCompatActivity() {
         guardar_btn.setOnClickListener{
             val nombre = nombre_et.text.toString()
             val cantidadprestada = cantidadprestada_et.text.toString().toDouble()
-            val descripcion = descripcion_et.text.toString()
+            val direccion = descripcion_et.text.toString()
+            val telefono = telefono_et.text.toString().toInt()
 
-            val cliente = Cliente(nombre, cantidadprestada, descripcion)
-
+            val cliente = Cliente(nombre, cantidadprestada, direccion,telefono)
             if(idCliente != null){
 
                 CoroutineScope(Dispatchers.IO).launch{

@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import kotlinx.android.synthetic.main.activity_cliente.*
+import kotlinx.android.synthetic.main.activity_nuevo_cliente.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -34,8 +35,10 @@ class ClienteActivity : AppCompatActivity() {
 
             nombre_cliente.text = cliente.nombre
             cantidadprestada_cliente.text = "$${cliente.cantidadprestada}"
-            detalles_cliente.text = cliente.descripcion
-            //  imagen_cliente.setImageResource(cliente.imagen)
+            descripcion_cliente.text = cliente.direccion
+            telefono_cliente.text = cliente.telefono.toString()
+
+
         })
 
     }
@@ -63,6 +66,7 @@ class ClienteActivity : AppCompatActivity() {
                 Toast.makeText(this, "Cliente Borrado Correctamente", Toast.LENGTH_SHORT)
                     .show();
             }
+
         }
         return super.onOptionsItemSelected(item)
     }

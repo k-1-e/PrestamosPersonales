@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         var usuario = findViewById<EditText>(R.id.EditUsuario).text.toString();
         var contraseña = findViewById<EditText>(R.id.EditContraseña).text.toString();
         if (usuario == "Kevin" && contraseña == "1351") {
-            val intent = Intent(this, Principal::class.java)
+            val intent = Intent(this, Bienvenida::class.java)
             startActivity(intent)
         } else {
 

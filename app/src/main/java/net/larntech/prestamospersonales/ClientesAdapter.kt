@@ -18,7 +18,8 @@ class ClienteAdapter(private val mContext: Context, private val listaClientes:Li
 
        layout.nombre.text = cliente.nombre
        layout.cantidadprestada.text ="$${cliente.cantidadprestada}"
-      // layout.imagen.setImageResource(cliente.imagen)
+
+     //  layout.imagen.setImageResource(cliente.imagen)
 
        return layout
 

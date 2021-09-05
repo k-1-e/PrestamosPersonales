@@ -40,11 +40,7 @@ class Principal : AppCompatActivity() {
 
 
     }
-    fun agregar(view: android.view.View) {
-        val intent = Intent(this, NuevoCliente::class.java)
 
-        startActivity(intent)
-    }
 
 }
 
