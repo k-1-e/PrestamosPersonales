@@ -24,10 +24,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         } else {
 
-            Toast.makeText(this, "Falta llenar los campos", Toast.LENGTH_SHORT)
+            Toast.makeText(this, "Datoas Erroneos", Toast.LENGTH_SHORT)
                 .show();
 
         }
+
+    }
+
+    fun registrarce(view: android.view.View) {
+
+        Toast.makeText(this, "Estamos trabajano en la actualización", Toast.LENGTH_SHORT)
+            .show();
 
     }
 }

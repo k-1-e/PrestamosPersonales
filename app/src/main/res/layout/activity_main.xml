@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#398297FF"
     tools:context=".MainActivity">
 
 
@@ -12,15 +13,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="35dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="Usuario"
         android:inputType="textPersonName"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/EditContraseña"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <EditText
         android:id="@+id/EditContraseña"
@@ -32,6 +35,7 @@
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="textPersonName"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,29 +48,53 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
+        android:backgroundTint="#0099FF"
         android:onClick="Iniciar"
-        android:shadowColor="#EC0C0C"
+        android:shadowColor="#000000"
         android:text="Iniciar"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#E11919"
+        android:textColor="#FBFBFB"
+        android:textColorHighlight="#101010"
         android:textColorHint="#FF1111"
         android:textColorLink="#C32828"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EditContraseña"
-        app:strokeColor="#E11919" />
+        app:strokeColor="#6AE301" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="528dp"
-        android:layout_height="151dp"
-        android:layout_marginTop="32dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bienvenidos" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="412dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/prestamospersonales__2_" />
+
+    <Button
+        android:id="@+id/registrarce_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#E4EF665C"
+        android:text="REGISTRACE"
+        android:onClick="registrarce"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agregar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

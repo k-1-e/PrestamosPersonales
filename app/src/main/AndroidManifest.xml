@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrestamosPersonales">
         <activity
+            android:name=".Bienvenida"
+            android:exported="true" />
+        <activity
             android:name=".NuevoCliente"
             android:exported="true" />
         <activity
