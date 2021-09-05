@@ -9,7 +9,7 @@ import androidx.room.RoomDatabase
 @Database(entities = [Cliente::class],version = 1)
 abstract class PrestamosDatabase : RoomDatabase() {
 
-    abstract  fun clientesDao() : ClientesDao
+    abstract  fun clientes() : ClientesDao
 
     companion object{
 

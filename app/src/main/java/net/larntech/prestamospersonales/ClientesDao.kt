@@ -9,6 +9,9 @@ interface ClientesDao {
     @Query ("SELECT * FROM clientes")
     fun getAll() : LiveData<List<Cliente>>
 
+    @Query("SELECT * FROM clientes WHERE idCliente = :id")
+    fun get(id:Int):LiveData<Cliente>
+
     @Insert
     fun insertAll(vararg cliente: Cliente)
 
