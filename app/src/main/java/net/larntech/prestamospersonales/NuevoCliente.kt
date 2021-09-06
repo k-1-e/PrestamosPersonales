@@ -27,7 +27,10 @@ class NuevoCliente : AppCompatActivity() {
             cantidadprestada_et.setText(cliente.cantidadprestada.toString())
             descripcion_et.setText(cliente.direccion)
             telefono_et.setText(cliente.telefono.toString())
+            fechaInico_et.setText(cliente.fechaInicio.toString())
+            fechaFin_et.setText(cliente.fehaFin.toString())
             idCliente = cliente.idCliente
+
         }
 
         val database = PrestamosDatabase.getDatabase(this)
@@ -46,8 +49,10 @@ class NuevoCliente : AppCompatActivity() {
                 val cantidadprestada = cantidadprestada_et.text.toString().toDouble()
                 val direccion = descripcion_et.text.toString()
                 val telefono = telefono_et.text.toString().toInt()
+                val fechaInicio = fechaInico_et.text.toString()
+                val fechaFin = fechaFin_et.text.toString()
 
-                val cliente = Cliente(nombre, cantidadprestada, direccion, telefono)
+                val cliente = Cliente(nombre, cantidadprestada, direccion, telefono, fechaInicio, fechaFin)
                 if (idCliente != null) {
 
                     CoroutineScope(Dispatchers.IO).launch {

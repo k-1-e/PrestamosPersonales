@@ -10,6 +10,8 @@ class Cliente(
     val cantidadprestada: Double,
     val direccion: String,
     val telefono: Int,
+    val fechaInicio : String,
+    val fehaFin : String,
     @PrimaryKey(autoGenerate = true)
     var idCliente: Int = 0
 ) : Serializable

@@ -38,6 +38,9 @@ class ClienteActivity : AppCompatActivity() {
             descripcion_cliente.text = cliente.direccion
             telefono_cliente.text = cliente.telefono.toString()
             nombre.text = cliente.nombre
+            fechaInicio_cliente.text = cliente.fechaInicio
+            fechaFin_cliente.text = cliente.fehaFin
+
 
 
 
