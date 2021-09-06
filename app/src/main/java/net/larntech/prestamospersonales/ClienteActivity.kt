@@ -72,4 +72,9 @@ class ClienteActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+    fun menu(view: android.view.View) {
+        val intent = Intent(this, Bienvenida::class.java)
+
+        startActivity(intent)
+    }
 }

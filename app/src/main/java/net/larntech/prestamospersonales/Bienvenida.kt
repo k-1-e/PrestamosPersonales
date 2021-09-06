@@ -25,5 +25,10 @@ class Bienvenida : AppCompatActivity() {
 
         startActivity(intent)
     }
+    fun acercade(view: android.view.View) {
+        val intent = Intent(this, acercade::class.java)
+
+        startActivity(intent)
+    }
 
 }
