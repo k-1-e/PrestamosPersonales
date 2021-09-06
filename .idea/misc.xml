@@ -3,15 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_bienvenida.xml" value="0.22" />
+        <entry key="app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.1078125" />
+        <entry key="app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.1078125" />
+        <entry key="app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.1078125" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1078125" />
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1078125" />
+        <entry key="app/src/main/res/drawable/ic_search_black_24dp.xml" value="0.1078125" />
+        <entry key="app/src/main/res/layout/activity_bienvenida.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_cliente.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_nuevo_cliente.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_principal.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/activity_total_fondos.xml" value="0.16847826086956522" />
+        <entry key="app/src/main/res/layout/activity_principal.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_total_fondos.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_cliente.xml" value="0.33" />
         <entry key="app/src/main/res/menu/cliente_menu.xml" value="0.196875" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.11875" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.11875" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round1.xml" value="0.11875" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/loucnger4.xml" value="0.11875" />
       </map>
     </option>
   </component>

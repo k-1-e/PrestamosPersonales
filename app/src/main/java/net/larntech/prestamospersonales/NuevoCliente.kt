@@ -33,7 +33,7 @@ class NuevoCliente : AppCompatActivity() {
         val database = PrestamosDatabase.getDatabase(this)
 
 
-        guardar_btn.setOnClickListener {
+        GenerarCalculo.setOnClickListener {
 
             if (nombre_et.text.isEmpty() || cantidadprestada_et.text.isEmpty() || descripcion_et.text.isEmpty()
                 || telefono_et.text.isEmpty()

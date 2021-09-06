@@ -32,11 +32,22 @@ class Principal : AppCompatActivity() {
             intent.putExtra("id", listaClientes[position].idCliente)
             startActivity(intent)
         }
-        floatingActionButton2.setOnClickListener {
+      /* floatingActionButton2.setOnClickListener {
             val intent = Intent(this, NuevoCliente::class.java)
 
             startActivity(intent)
         }
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+       */
 
 
     }

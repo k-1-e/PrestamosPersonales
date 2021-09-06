@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/telefono_et" />
 
     <Button
-        android:id="@+id/guardar_btn"
+        android:id="@+id/GenerarCalculo"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="138dp"
         android:layout_height="60dp"
