@@ -4,11 +4,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/loucnger4"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_round1"
         android:supportsRtl="true"
         android:theme="@style/Theme.PrestamosPersonales">
+        <activity
+            android:name=".TotalFondos"
+            android:exported="true" />
         <activity
             android:name=".Bienvenida"
             android:exported="true" />

@@ -33,10 +33,12 @@ class ClienteActivity : AppCompatActivity() {
         clienteLiveData.observe(this, Observer{
             cliente = it
 
-            nombre_cliente.text = cliente.nombre
+            nombre.text = cliente.nombre
             cantidadprestada_cliente.text = "$${cliente.cantidadprestada}"
             descripcion_cliente.text = cliente.direccion
             telefono_cliente.text = cliente.telefono.toString()
+            nombre.text = cliente.nombre
+
 
 
         })

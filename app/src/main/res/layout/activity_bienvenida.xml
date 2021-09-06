@@ -26,12 +26,15 @@
         android:id="@+id/verClientes"
         android:layout_width="150dp"
         android:layout_height="60dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="332dp"
         android:layout_marginEnd="32dp"
         android:onClick="agregarClientes"
         android:shadowColor="#EC0C0C"
         android:text="Crear Clientes"
         app:layout_constraintEnd_toStartOf="@+id/agregarCliente"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="#E11919" />
 
@@ -39,11 +42,13 @@
         android:id="@+id/button"
         android:layout_width="150dp"
         android:layout_height="60sp"
-        android:layout_marginTop="40dp"
-        android:text="Cartera"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#E4EF665C"
+        android:onClick="capital"
+        android:text="Cartera"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintHorizontal_bias="0.087"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/verClientes" />
 
