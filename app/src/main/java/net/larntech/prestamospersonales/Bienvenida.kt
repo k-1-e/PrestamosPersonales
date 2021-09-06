@@ -21,7 +21,7 @@ class Bienvenida : AppCompatActivity() {
         startActivity(intent)
     }
     fun capital(view: android.view.View) {
-        val intent = Intent(this, TotalFondos::class.java)
+        val intent = Intent(this, Simulador::class.java)
 
         startActivity(intent)
     }

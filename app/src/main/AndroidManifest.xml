@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrestamosPersonales">
         <activity
-            android:name=".TotalFondos"
+            android:name=".Simulador"
             android:exported="true" />
         <activity
             android:name=".Bienvenida"

@@ -3,12 +3,12 @@ package net.larntech.prestamospersonales
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_nuevo_cliente.GenerarCalculo
-import kotlinx.android.synthetic.main.activity_total_fondos.*
+import kotlinx.android.synthetic.main.activity_simulador.*
 
-class TotalFondos : AppCompatActivity() {
+class Simulador : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_total_fondos)
+        setContentView(R.layout.activity_simulador)
         multiplicar()
     }
 
